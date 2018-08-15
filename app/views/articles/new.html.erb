@@ -1,0 +1,14 @@
+<div class="navbar-wiki">
+  <h1>Articles List</h1>
+  <%= link_to new_article_path do %>
+    <i class="fas fa-pen"></i> Create a new article
+  <% end %>
+</div>
+
+<div class="content-form">
+  <h2>New Article</h2>
+  <%= render 'article_form' %>
+
+</div>
+
+<%= link_to 'Go back', articles_path %>
